@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>LN</title>
+</head>
+<style>
+  .footer {
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: black;
+          color: white;
+          text-align: center;
+        }  
+
+.container{background-color: rgba(255, 255, 255, 0.842);}
+
+
+</style>
+<div class="body text-center" style="background-image: url('notes.jpg');">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="lnlogo.png"></a>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link"href="accueil.html" style="color:#98E1FE">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="artiste.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                L'artiste
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#" style="color:#E2DF6A">Biographie</a></li>
+                <li><a class="dropdown-item" href="#" style="color:#E2DF6A">Selfocracy</a></li>
+                <li><a class="dropdown-item" href="#" style="color:#E2DF6A">Sillygomania</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> 
+            
+            <li class="nav-item">
+              <a class="nav-link" href="quizz.html" style="color: #E2436C">Quizz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="color:#FC9D5A">Contactez-nous</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+  </nav>
+  <br>
+  <div class="container">
+    <br><br>
+    <h1 class="display-4 text-center">Quizz</h1><br><br><br>
+    <p class="lead text-center">
+      <i>Voici un quizz de 10 questions pour vous évaluer et savoir si vous êtes un(e) vrai(e) fan de Loïc Nottet.</i> 
+      <br><br><br>
+    </p>
+    <div class="quiz" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">Question Text</h2>
+          <div class="row">
+            <div class="col">
+              <div class="text- fs-5 fw-light">
+                <ul type="none">
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                  </li>
+          
+                  <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                  </li>
+          
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-outline-dark btn-lg" id="submit">Suivant</button>
+        </div>
+        
+    </div>
+    <br><br><br>
+</div>
+
+      <div class="footer">
+        <div class="row mt-4">
+          <div class="col md">
+            <p class="fw-lighter"><b>Son instagram</b><br>
+              <a href="https://www.instagram.com/loicnottet_officiel/" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fab fa-instagram fa-2x" style="color:#98E1FE"></i>
+              </a>
+            </p>
+          </div>
+          <div class="col md">
+            <p class="fw-lighter"><b>Son deezer</b><br>
+                <a href="https://www.deezer.com/fr/artist/7631240" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fab fa-deezer fa-2x" style="color:#E2DF6A"></i>
+                  </a>
+            </p>
+          </div>
+          <div class="col md">
+            <p class="fw-lighter"><b>Sa chaîne YouTube</b> <br>
+                <a href="https://www.youtube.com/channel/UC_J-M6uH656nBSDmZeImjnw" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fab fa-youtube fa-2x" style="color:#E2436C"></i>
+                  </a>
+            </p>
+          </div>
+          <div class="col md">
+            <p class="fw-lighter"><b>Son site internet</b> <br>
+                <a href="https://www.loicnottet.com/" target="_blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fas fa-globe-europe fa-2x" style="color:#FC9D5A"></i>
+                  </a>
+            </p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col md">
+            <p class="fw-light"><i class="far fa-copyright fa-1x" style="color:white"></i><br><a href="https://www.legalplace.fr/guides/mentions-legales/" style="color:white"><u>Cliquez ici pour consulter les mentions légales</u></a></p>
+          </div>
+        </div>
+</div>
+</body>
+<script>
+  
+    const quizData = [
+    
+    {
+        question: "1/10 : Quelle est sa nationalité ?",
+        a: "Français",
+        b: "Belge",
+        c: "Suisse",
+        d: "Canadien",
+        correct: "b",
+    },
+    {
+        question: "2/10 : Qui sont ces influences musicales ?",
+        a: "Sia, Lana del Ray, Imagine Dragons",
+        b: "Adèle, Lewis Capaldi, Edith Piaf",
+        c: "Beyoncé, Sam Smith, Lorde",
+        d: "Sia, Adèle, Sam Smith",
+        correct: "a",
+    },
+    {
+        question: "3/10 : En quelle année a-t-il participé à l'Eurovision ?",
+        a: "2010",
+        b: "2014",
+        c: "2015",
+        d: "2018",
+        correct: "c",
+    },
+    {
+        question: "4/10 : Quelle saison de Danse avec les Stars a-t-il gagné et avec qui ?",
+        a: "La 6ème avec Denitsa",
+        b: "La 7ème avec Denitsa",
+        c: "La 5ème avec Katrina",
+        d: "La 7ème avec Candice",
+        correct: "a",
+    },
+    {
+        question: "5/10 : Quel titre a-t-il interprété lors de l'Eurovision ?",
+        a: "Million Eyes",
+        b: "Mr/Mme",
+        c: "Rythm Inside",
+        d: "Mirror",
+        correct: "c",
+    },
+    {
+        question: "6/10 : Comment le surnomme les médias ?",
+        a: "Le Billy Elliot de Bruxelles",
+        b: "Le Billy Elliot de Charleroi",
+        c: "Le Petit Prince de Bruxelles",
+        d: "Le Petit Prince de Charleroi",
+        correct: "b",
+    },
+    {
+        question: "7/10 : Pour quel film Disney a-t-il interprété un titre ?",
+        a: "Raiponce : À la Croisée des Chemins",
+        b: "La Reine des Neiges II",
+        c: "Le Retour de Mary Poppins",
+        d: "Vaiana, la Légende du Bout du Monde",
+        correct: "c",
+    },
+    {
+        question: "8/10 : Par qui a-t-il été félicité après avoir fait une reprise d'un de ses titres ?",
+        a: "Lana del Ray",
+        b: "Sia",
+        c: "Lewis Capaldi",
+        d: "Lorde",
+        correct: "b",
+    },
+    {
+        question: "9/10 : Quel est le nom de son deuxième album ?",
+        a: "Selfocracy",
+        b: "Selfomania",
+        c: "Sillycracy",
+        d: "Sillygomania",
+        correct: "d",
+    },
+    {
+        question: "10/10 : Combien de titres au total a t-il sorti ?",
+        a: "36",
+        b: "40",
+        c: "31",
+        d: "42",
+        correct: "a",
+    },
+
+
+
+];
+
+const quiz= document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+                      `
+            if(score < 5)
+       {
+           quiz.innerHTML = `<br><br>
+           <h2>Vous avez ${score}/${quizData.length} bonnes réponses. Vous ferez mieux la prochaine fois !</h2>
+           <br><br><br>
+           <button onclick="location.reload()">Rejouer</button>
+           <br><br>
+           <b><u>Réponses :</b></u> <br><br>
+           1. <i>Quelle est sa nationalité ?</i> Belge <br>
+           2. <i>Qui sont ces influences musicales ?</i> Sia, Lana del Ray, Imagine Dragons <br>
+           3. <i>En quelle année a-t-il participé à l'Eurovision ?</i> 2015 <br>
+           4. <i>Quelle saison de Danse avec les Stars a-t-il gagné et avec qui ?</i> La 6ème avec Denitsa <br>
+           5. <i>Quel titre a-t-il interprété lors de l'Eurovision ? </i>Rythm Inside <br>
+           6. <i>Comment le surnomme les médias ?</i> Le Billy Elliot de Charleroi <br>
+           7. <i>Pour quel film Disney a-t-il interprété un titre ?</i> Le Retour de Mary Poppins <br>
+           8. <i>Par qui a-t-il été félicité après avoir fait une reprise d'un de ses titres ?</i> Sia <br>
+           9. <i>Quel est le nom de son deuxième album ?</i> Sillygomania <br>
+           10. <i>Combien de titres au total a t-il sorti ?</i> 36
+           `
+        
+       }
+       if(score == 5)
+       {
+           quiz.innerHTML = `<br><br><br><br>
+           <h2>Vous avez ${score}/${quizData.length} bonnes réponses. C'est bien vous avez la moyenne !</h2>
+           <br><br><br><br><br>
+           <button onclick="location.reload()">Rejouer</button>
+           <br><br>
+           <b><u>Réponses :</b></u> <br><br>
+           1. <i>Quelle est sa nationalité ?</i> Belge <br>
+           2. <i>Qui sont ces influences musicales ?</i> Sia, Lana del Ray, Imagine Dragons <br>
+           3. <i>En quelle année a-t-il participé à l'Eurovision ?</i> 2015 <br>
+           4. <i>Quelle saison de Danse avec les Stars a-t-il gagné et avec qui ?</i> La 6ème avec Denitsa <br>
+           5. <i>Quel titre a-t-il interprété lors de l'Eurovision ? </i>Rythm Inside <br>
+           6. <i>Comment le surnomme les médias ?</i> Le Billy Elliot de Charleroi <br>
+           7. <i>Pour quel film Disney a-t-il interprété un titre ?</i> Le Retour de Mary Poppins <br>
+           8. <i>Par qui a-t-il été félicité après avoir fait une reprise d'un de ses titres ?</i> Sia <br>
+           9. <i>Quel est le nom de son deuxième album ?</i> Sillygomania <br>
+           10. <i>Combien de titres au total a t-il sorti ?</i> 36
+           `
+           
+           
+       }
+       if(score>5 && score<10)
+       {
+           quiz.innerHTML = `<br><br>
+           <h2>Vous avez ${score}/${quizData.length} bonnes réponses. Vous êtes un connaisseur !</h2>
+           <br><br><br>
+           <div class="d-grid gap-2 col-6 mx-auto">
+          <button onclick="location.reload()" class="btn btn-outline-dark btn-lg">Rejouer</button>
+          </div>
+           <br><br>
+           <b><u>Réponses :</b></u> <br><br>
+           1. <i>Quelle est sa nationalité ?</i> Belge <br>
+           2. <i>Qui sont ces influences musicales ?</i> Sia, Lana del Ray, Imagine Dragons <br>
+           3. <i>En quelle année a-t-il participé à l'Eurovision ?</i> 2015 <br>
+           4. <i>Quelle saison de Danse avec les Stars a-t-il gagné et avec qui ?</i> La 6ème avec Denitsa <br>
+           5. <i>Quel titre a-t-il interprété lors de l'Eurovision ? </i>Rythm Inside <br>
+           6. <i>Comment le surnomme les médias ?</i> Le Billy Elliot de Charleroi <br>
+           7. <i>Pour quel film Disney a-t-il interprété un titre ?</i> Le Retour de Mary Poppins <br>
+           8. <i>Par qui a-t-il été félicité après avoir fait une reprise d'un de ses titres ?</i> Sia <br>
+           9. <i>Quel est le nom de son deuxième album ?</i> Sillygomania <br>
+           10. <i>Combien de titres au total a t-il sorti ?</i> 36
+           `
+       }
+       if(score == 10)
+       {
+           quiz.innerHTML = `<br><br><br><br>
+           <h2>Vous avez ${score}/${quizData.length} bonnes réponses. Vous êtes un(e) vrai(e) fan !</h2>
+           <br><br><br><br><br>
+           <button onclick="location.reload()">Rejouer</button>
+           <br><br>
+           1. <i>Quelle est sa nationalité ?</i> Belge <br>
+           2. <i>Qui sont ces influences musicales ?</i> Sia, Lana del Ray, Imagine Dragons <br>
+           3. <i>En quelle année a-t-il participé à l'Eurovision ?</i> 2015 <br>
+           4. <i>Quelle saison de Danse avec les Stars a-t-il gagné et avec qui ?</i> La 6ème avec Denitsa <br>
+           5. <i>Quel titre a-t-il interprété lors de l'Eurovision ? </i>Rythm Inside <br>
+           6. <i>Comment le surnomme les médias ?</i> Le Billy Elliot de Charleroi <br>
+           7. <i>Pour quel film Disney a-t-il interprété un titre ?</i> Le Retour de Mary Poppins <br>
+           8. <i>Par qui a-t-il été félicité après avoir fait une reprise d'un de ses titres ?</i> Sia <br>
+           9. <i>Quel est le nom de son deuxième album ?</i> Sillygomania <br>
+           10. <i>Combien de titres au total a t-il sorti ?</i> 36
+           `
+       }
+       }
+       
+    }
+})
+
+</script>
+</html>
